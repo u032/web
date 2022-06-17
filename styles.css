@@ -1,0 +1,118 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Quicksand;
+    src: url(./Quicksand-VariableFont.ttf);
+}
+div.overlay {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #e0d8d8;
+    transition: ease-in-out transform .5s;
+}
+div.overlay div.o-centered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+div.overlay div.o-centered span {
+    font-family: Quicksand, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #131313;
+}
+section.first {
+    height: 100vh;
+    width: 100vw;
+}
+section.first div.centered {
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+section.first div.centered div.header {
+    display: flex;
+    justify-content: space-between;
+}
+section.first div.centered div.header div.logo h2 {
+    font-family: Quicksand, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: #131313;
+}
+section.first div.centered div.header div.links {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+section.first div.centered div.header div.links a {
+    font-family: Quicksand, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #131313;
+    text-decoration: none;
+    padding: 3px 6px;
+    transition: ease-out color .05s, ease-out background-color .05s;
+}
+section.first div.centered div.description {
+    margin-top: 20px;
+}
+section.first div.centered div.description span.content {
+    font-family: Quicksand, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #131313;
+}
+section.first div.centered div.lower-box {
+    margin-top: 30px;
+    display: flex;
+}
+section.first div.centered div.lower-box div.contacts {
+    width: 55%;
+    height: 155px;
+}
+section.first div.centered div.lower-box div.skills {
+    width: 45%;
+    height: 155px;
+}
+section.first div.centered div.lower-box div.contacts h2,
+section.first div.centered div.lower-box div.skills h2 {
+    font-family: Quicksand, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #131313;
+    margin-bottom: 20px;
+}
+section.first div.centered div.lower-box div.contacts ul,
+section.first div.centered div.lower-box div.contacts ul a {
+    font-family: Quicksand, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #131313;
+    list-style-type: none;
+    text-decoration: none;
+}
+section.first div.centered div.lower-box div.contacts ul a:hover {
+    opacity: 0.8;
+}
+section.first div.centered div.lower-box div.contacts ul li {
+    margin-bottom: 8px;
+}
+section.first div.centered div.lower-box div.contacts ul li:last-child {
+    margin-bottom: 0;
+}
+section.first div.centered div.lower-box div.contacts ul li svg {
+    width: 20px;
+    margin-right: 5px;
+}
+section.first div.centered div.lower-box div.skills img {
+    width: 100%;
+}
